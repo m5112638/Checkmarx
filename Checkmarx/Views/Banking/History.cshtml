@@ -1,0 +1,32 @@
+﻿@model Checkmarx.Models.HistoryViewModel
+
+@{
+    ViewBag.Title = "History";
+}
+
+<h2>Money Transfer History</h2>
+<br />
+
+<div>
+    @{
+        if (Model.Histroy.Count > 0)
+        {
+            <h4>Recorded Transactions</h4>
+            <table class="table">
+                <tbody>
+                    @foreach (var item in Model.Histroy)
+                    {
+                        <tr>
+                            <td>@item</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <h4>No transaction is recorded</h4>
+        }
+    }
+</div>
+
