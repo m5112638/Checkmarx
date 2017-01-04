@@ -243,6 +243,7 @@
     <Content Include="Views\Banking\History.cshtml" />
     <Content Include="Views\Xss\Index.cshtml" />
     <Content Include="Views\Banking\Transfer2.cshtml" />
+    <Content Include="Views\Xss\XssA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,13 @@
+﻿@model Checkmarx.Models.XssViewModel
+
+@{
+    ViewBag.Title = "XssA";
+}
+
+<h2>XSS Vulnerable Page</h2>
+
+<br />
+
+<h4>Parameter "s": @Html.Raw(@Model.Value)</h4>
+<div>@Html.Raw(@Model.Value)</div>
+@*<script>alert("Hi")</script>*@
